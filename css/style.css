@@ -1,0 +1,260 @@
+/* Config */
+.limit{
+    position: relative;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 10px 0px;
+}
+
+body{
+    background-color: #0B0813;
+    color: #fff;
+}
+
+/* Menu Mobile */
+.menu-mobile{
+    display: none;
+}
+/* Header Site */
+.header-site{
+    height: 80px;
+    padding: 20px 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+.header-site button{
+    position: absolute;
+    right: 0;
+}
+.logo-div{
+    position: relative;
+}
+.logo-div h1{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 2.4em;
+}
+.logo-div h2{
+    position: relative;
+    margin-top: 5px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.2em;
+}
+
+.logo-div::after{
+    content: '';
+    position: absolute;
+    width: 35px;
+    right: 0px;
+    height: 6px;
+    animation: logo 1.2s  ease-in-out;
+    background-color: #F26060;
+}
+
+@keyframes logo{
+    0%{
+        right: 180px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+
+
+.btn-login{
+    position: relative;
+    padding: 8px 12px;
+    margin-right: 20px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+}
+
+/* Search Section */
+
+.search-section{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+    background-color: #F26060;
+}
+.search-input{
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    left: 10px;
+    padding: 11px 40px;
+    border-radius: 50px;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-align: center;
+}
+.search-input:focus{
+    outline: none;
+
+}
+.fa-magnifying-glass{
+    color: #0B0813;
+    position: relative;
+    left: -30px;
+}
+.search-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Jobs Section */
+.jobs-section{
+    padding: 20px 0;
+}
+.title-mark-jobs{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+.marks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fa-award{
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #95DF73;
+}
+.mark-buttons{
+    margin-top: 10px;
+}
+.mark-buttons span{
+    text-align: center;
+    padding: 6px 12px;
+    background-color: #95DF73;
+    border-radius: 10px;
+    color: #0B0813;
+    font-family: 'Josefin Slab', serif;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+/* Job List  */
+.jobs-list{
+    position: relative;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.job-div{
+    margin: 10px 5px;
+    display: flex;
+    
+    flex-direction: column;
+    max-width: 230px;
+    /* height: 350px; */
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    padding: 10px;
+    color: #0B0813;
+    background-color: #fff;
+}
+/* .job-div:nth-child(1){
+    position: relative;
+    top: 30px;
+}
+.job-div:nth-child(3){
+    position: relative;
+    top: 30px;
+} */
+.job-title{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.job-description{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+.value-job{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.fa-brazilian-real-sign{
+    font-size: 0.8em;
+}
+
+.img-cover img{
+    position: relative;
+    left: -10px;
+    top: -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 250px;
+}
+.btn-job{
+    position: relative;
+    left: calc(50% - 40%);
+    margin: 10px 0;
+    max-width: 80%;
+
+    padding: 12px 10px;
+    border: none;
+    background-color: #fff;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Footer Site */
+.footer-site{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #F26060;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 1.2em;
+}
+@media (min-width: 803px){
+.job-div:nth-child(1){
+    position: relative;
+    top: 30px;
+}
+.job-div:nth-child(3){
+    position: relative;
+    top: 30px;
+}
+}
+@media (max-width: 794px){
+    .btn-login{
+        display: none;
+    }
+    .menu-mobile{
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        height: 30px;
+        padding: 20px 20px;
+        box-sizing: border-box;
+        font-size: 2em;
+    }
+}
